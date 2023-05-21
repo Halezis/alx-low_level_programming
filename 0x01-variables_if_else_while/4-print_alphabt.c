@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+  * main - print lowercase alphabets, not e and q
+  *
+  * Return: Always 0
+  */
+
 int main(void)
 {
 	char x;

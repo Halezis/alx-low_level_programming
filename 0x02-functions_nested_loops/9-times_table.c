@@ -20,13 +20,17 @@ void times_table(void)
 			int z1 = z / 10;
 			int z2 = z % 10;
 
-			if (z < 10)
+			if (z > 0 && z < 10)
 			{
 				_putchar(' ');
 			}
-			else
+			else if (z >= 10)
 			{
 				_putchar('0' + z1);
+			}
+			else if (x == 0 && y > 0)
+			{
+				_putchar(' ');
 			}
 			_putchar('0' + z2);
 

@@ -20,20 +20,16 @@ void times_table(void)
 			int z1 = z / 10;
 			int z2 = z % 10;
 
-			if (z == 0)
+			if (z < 10)
 			{
-				_putchar('0' + z);
-			}
-			else if (z >= 10)
-			{
-				_putchar('0' + z1);
-				_putchar('0' + z2);
+				_putchar(' ');
 			}
 			else
 			{
-				_putchar(' ');
-				_putchar('0' + z);
+				_putchar('0' + z1);
 			}
+			_putchar('0' + z2);
+
 			if (y < 9)
 			{
 				_putchar(',');

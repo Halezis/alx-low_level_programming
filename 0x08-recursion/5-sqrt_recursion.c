@@ -4,7 +4,6 @@
  *_sqrt_helper - A helper function
  * @num: number n in the helper function
  * @root: square root of n
- *_sqrt_recursion - returns the natural square root of a number.:
  * Return: The square root of n. -1 if has no natural square root.
  */
 
@@ -21,6 +20,12 @@ int _sqrt_helper(int num, int root)
 
 	return (_sqrt_helper(num, root + 1));
 }
+
+/**
+ * _sqrt_recursion - returns the natural square root of a number.
+ * @n: The number whose square root is returned
+ * Return: The square root of n. -1 if has no natural square root.
+ */
 
 int _sqrt_recursion(int n)
 {

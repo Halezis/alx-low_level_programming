@@ -2,7 +2,12 @@
 
 /**
  * is_palindrome - a function that returns 1 if a string is a palindrome and 0 if not
- *@s: pointer to the string to be checked
+ *pali_helper - helper function
+ *_strlen_recursion: string length function
+ * @s: pointer to the string to be checked
+ @index: index
+ @length: string length
+
  * Return: 1 if string is a palindrone. 0 if not
  */
 

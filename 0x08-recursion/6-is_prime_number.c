@@ -23,7 +23,7 @@ int prime_helper(int num, int factor)
 }
 
 /**
- * is_prime_number - a function that returns 1 if the input integer is a prime number, otherwise return 0
+ * is_prime_number - a function that checks for a prime number
  * @n: A number
  * Return: 1 if n is prime. 0 if not.
  */

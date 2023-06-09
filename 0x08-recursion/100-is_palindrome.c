@@ -23,7 +23,7 @@ int pali_helper(char *s, int index, int length)
 }
 
 /**
- *_strlen_recursion: string length function
+ *_strlen_recursion - string length function
  * @s: pointer to the string to be checked
  * Return: length of string
  */
@@ -39,7 +39,7 @@ int _strlen_recursion(char *s)
 }
 
 /**
- * is_palindrome - a function that returns 1 if a string is a palindrome and 0 if not
+ * is_palindrome - a function that checks for a palindrone
  * @s: pointer to the string to be checked
  * Return: 1 if string is a palindrone. 0 if not
  */

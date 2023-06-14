@@ -11,8 +11,8 @@
 char *_strdup(char const *str)
 {
 	char *new_str;
-	int length;
-	int x;
+	unsigned int length;
+	unsigned int x;
 
 	length = strlen(str);
 
@@ -21,17 +21,15 @@ char *_strdup(char const *str)
 		return (NULL);
 	}
 
-	new_str = malloc(sizeof(char) * length);
+	new_str = malloc(sizeof(char) * length + 1);
 	if (new_str != NULL)
 	{
 		for (x = 0; x < length; x++)
 		{
 			new_str[x] = str[x];
 		}
-		return (new_str);
+		new_str[length] = '\0';
 	}
-	else
-	{
-		return (NULL);
-	}
+
+	return (new_str);
 }

@@ -3,8 +3,8 @@
 #include <string.h>
 
 /**
- *alloc_grid - concatenates two strings
- *@width: x
+ *free_grid - frees up memory allocated to grid
+ *@grid: a 2-D grid
  *@height: y
  *Return: a pointer to the new string. Null, if str = NULL
 */

@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *_calloc - allocates memory for an array, using malloc
+ *array_range - allocates memory for an array, using malloc
  *@min: minimum
  *@max: maximum number
  *Return: a pointer to the allocated memory
@@ -12,6 +12,7 @@
 int *array_range(int min, int max)
 {
 	int x;
+	int y;
 	int *arr;
 
 	if (min > max)
@@ -25,9 +26,11 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
+	y = 0;
 	for (x = min; x <= max; x++)
 	{
-		arr[x] = x;
+		arr[y] = x;
+		y++;
 	}
 
 	return (arr);

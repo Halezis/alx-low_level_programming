@@ -1,5 +1,5 @@
-#ifndef MACRO_H
-#define MACRO_H
+#ifndef SIZE_H
+#define SIZE_H
 
 #define SIZE 1024
 

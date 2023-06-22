@@ -8,8 +8,10 @@
  */
 void opcodes_print(int conv_bytes)
 {
-	unsigned char *ptr = (unsigned char *)opcodes_print;
+	unsigned char *ptr;
 	int x;
+
+	ptr = (unsigned char *)opcodes_print;
 	for (x = 0; x < conv_bytes; x++)
 	{
 		printf("%02x ", *(ptr + x));
@@ -25,13 +27,15 @@ void opcodes_print(int conv_bytes)
  */
 int main(int argc, char *argv[])
 {
+	int conv_bytes;
+	
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit (1);
 	}
 
-	int conv_bytes = atoi(argv[1]);
+	conv_bytes = atoi(argv[1]);
 
 	if (conv_bytes < 0)
 	{

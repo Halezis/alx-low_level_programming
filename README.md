@@ -1,2 +1,1 @@
-# alx-low_level_programming
-ALX low levelprogramming
+0x0E. C - Structures, typedef

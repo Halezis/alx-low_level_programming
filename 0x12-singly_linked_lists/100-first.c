@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * print_intro - Prints the introductory message.
+ * print_first - Prints the introductory message.
  */
 
-void print_intro(void)
+void print_first(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
@@ -15,5 +15,5 @@ void print_intro(void)
  */
 void __attribute__((constructor)) pre_main(void)
 {
-	print_intro();
+	print_first();
 }
